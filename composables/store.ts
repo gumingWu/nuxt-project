@@ -1,3 +1,5 @@
+import { skipHydrate } from 'pinia'
+
 export const useStateStore = defineStore('nuxtStore', () => {
   // const state = ref(0)
   const state = useSessionStorage('nuxt-store-test', 0)
@@ -7,7 +9,7 @@ export const useStateStore = defineStore('nuxtStore', () => {
   }
 
   return {
-    state,
+    state: skipHydrate(state),
     setState,
   }
 })
