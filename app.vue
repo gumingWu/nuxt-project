@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const store = useStateStore()
+const pStore = usePluginStateStore()
 </script>
 
 <template>
@@ -8,6 +9,10 @@ const store = useStateStore()
     <div>
       Here state: {{ store.state }}
       <button @click="store.setState">setState</button>
+    </div>
+    <div>
+      Here plugin state: {{ pStore.pState }}
+      <button @click="pStore.setPState">setPState</button>
     </div>
   </div>
 </template>

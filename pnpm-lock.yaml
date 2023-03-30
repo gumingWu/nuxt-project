@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@pinia-plugin-persistedstate/nuxt': ^1.1.1
   '@pinia/nuxt': ^0.4.7
   '@vueuse/core': ^9.13.0
   '@vueuse/nuxt': ^9.13.0
@@ -8,6 +9,7 @@ specifiers:
   pinia: ^2.0.33
 
 dependencies:
+  '@pinia-plugin-persistedstate/nuxt': 1.1.1_2fa6k6uov4i2t7fhwaa7f3r2li
   '@pinia/nuxt': 0.4.7
   '@vueuse/core': 9.13.0
   '@vueuse/nuxt': 9.13.0_nuxt@3.3.2
@@ -744,6 +746,21 @@ packages:
       - vls
       - vti
       - vue-tsc
+
+  /@pinia-plugin-persistedstate/nuxt/1.1.1_2fa6k6uov4i2t7fhwaa7f3r2li:
+    resolution: {integrity: sha512-b6ZNP3Re8COmfZEpj4KQmbp2TuDKrLggDFLZa8FiJF68xE/oCsPXIuXUvAt8E4ht/5sq4Z/grlA+iGXaI2aeKQ==}
+    peerDependencies:
+      '@pinia/nuxt': ^0.4.4
+    dependencies:
+      '@nuxt/kit': 3.3.2
+      '@pinia/nuxt': 0.4.7
+      defu: 6.1.2
+      pinia-plugin-persistedstate: 3.1.0_pinia@2.0.33
+    transitivePeerDependencies:
+      - pinia
+      - rollup
+      - supports-color
+    dev: false
 
   /@pinia/nuxt/0.4.7:
     resolution: {integrity: sha512-ifgA9PO/jmPlK1e/HtkrZa7OMSL8EUOpo8Z1O5vNLRr/OZ42kKGEaY1NbIoCz6dIf/pbkATTNHJmcrlPCo3zSA==}
@@ -2936,6 +2953,14 @@ packages:
   /pify/2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
+
+  /pinia-plugin-persistedstate/3.1.0_pinia@2.0.33:
+    resolution: {integrity: sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==}
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: 2.0.33
+    dev: false
 
   /pinia/2.0.33:
     resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
